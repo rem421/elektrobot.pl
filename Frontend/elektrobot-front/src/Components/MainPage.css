@@ -1,0 +1,19 @@
+.mainPage {
+}
+
+.kosiara {
+  width: 100%;
+}
+
+.imgSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.ofertaButton{
+    max-width: 20vw;
+    cursor: pointer;
+}
+.logoComment{
+  max-width: 80%;
+}
