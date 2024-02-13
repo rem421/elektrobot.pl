@@ -1,0 +1,86 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgba(230, 230, 230, 1);
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .navbarContainer {
+    display: none;
+  }
+  .navbarLogo {
+    margin-left: 5vw;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbarBars {
+    width: 30px;
+    height: 30px;
+    display: block !important;
+  }
+  .icons {
+    margin-right: 3vw;
+    display: flex;
+    gap: 5px !important;
+    align-items: center;
+  }
+}
+.navbarPerson {
+  height: 30px;
+  width: 30px;
+}
+.navbarBasket {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.navbarLogo {
+  object-fit: contain;
+  height: 50%;
+}
+.navbarButton {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.navbarBars {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  gap: 50px;
+}
+.menuOpen .navbarBarsContainer {
+  align-self: flex-end;
+display: flex;
+flex-wrap: wrap;
+  align-content: center;
+  margin-right: 3vw;
+  height: 42px;
+}
+
+.menuOpen {
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+ 
+  background: rgba(230, 230, 230, 1);
+  top: 0;
+}
+
+.menuOpen .navbarContainer {
+  display: flex !important;
+  background: rgba(230, 230, 230, 1);
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
