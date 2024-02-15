@@ -21,8 +21,8 @@ const Footer = () => {
             <p className="contact">Adres: Biuro 12A/6</p>
         </div>
         <div className="contactField">
-            <p className="fieldText"></p>
-            <img src={require("./Images/Arrow.png")} alt=""></img>
+            <p className="fieldText">Kontakt</p>
+            <img className="arrow" src={require("./Images/Arrow.png")} alt=""></img>
         </div>
       </div>
     </div>

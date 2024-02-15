@@ -1,5 +1,6 @@
 .logo {
   width: 2vw;
+  
 }
 .footerBody {
   background: rgba(20, 20, 20, 1);
@@ -9,6 +10,7 @@
   justify-content: center;
   align-items: center;
   gap: 8vh;
+
 }
 .linkContainer {
   display: flex;
@@ -18,6 +20,7 @@
   color: rgba(255, 255, 255, 1);
   font-size: 1vw;
   font-weight: 20;
+  cursor: pointer;
 }
 .bottomSection {
   display: flex;
@@ -30,7 +33,7 @@
   width: 70vw;
 }
 .middleLine {
-  width: 80vw;
+  width: 75vw;
   background: white;
   height: 0.2vh;
 }
@@ -39,4 +42,66 @@
   font-size: 1vw;
   font-weight: 20;
   text-align: start;
+}
+.arrow {
+  width: 2.5vw;
+  cursor: pointer;
+}
+.contactField {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0.5vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5rem;
+  border-width: 1px;
+  
+}
+.fieldText {
+  color: white;
+  font-size: 1vw;
+
+}
+
+@media screen and (max-width: 767px) {
+  .middleLine {
+    display: none;
+  }
+  .contact{
+    font-size: 2vw;
+  }
+  .link{
+    font-size: 2vw;
+  }
+  .footerBody{
+    height: 30vh;
+  }
+  .bottomSection{
+    justify-content: space-around;
+  }
+  .upperSection{
+    justify-content: space-around !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactField{
+    width: 20vw;
+    height: 6vw;
+    justify-content: space-between;
+  }
+  .fieldText{
+    font-size: 2vw;
+    font-weight: 20;
+  }
+  .logo{
+    width: 8vw;
+  }
 }
