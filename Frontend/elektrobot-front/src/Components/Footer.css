@@ -1,0 +1,42 @@
+.logo {
+  width: 2vw;
+}
+.footerBody {
+  background: rgba(20, 20, 20, 1);
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+  gap: 8vh;
+}
+.linkContainer {
+  display: flex;
+  gap: 2vw;
+}
+.link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1vw;
+  font-weight: 20;
+}
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+}
+.upperSection {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+}
+.middleLine {
+  width: 80vw;
+  background: white;
+  height: 0.2vh;
+}
+.contact {
+  color: rgba(171, 171, 171, 0.691);
+  font-size: 1vw;
+  font-weight: 20;
+  text-align: start;
+}

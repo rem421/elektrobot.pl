@@ -38,7 +38,7 @@ const MainPage = () => {
       </div>
       <img className="ofertaButton" src={require("./Images/Oferta.png")} alt=""></img>
       <img className="logoComment" src={require("./Images/AmbrogioComment.png")} alt=""></img>
-      <img className="footer" src={require("./Images/footer.png")} alt=""></img>
+      {/* <img className="footer" src={require("./Images/footer.png")} alt=""></img> */}
     </div>
   );
 };
