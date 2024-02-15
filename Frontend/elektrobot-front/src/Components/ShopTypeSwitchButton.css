@@ -13,7 +13,7 @@
     
     position: relative; /* Position relative for absolute positioning inside */
     width: 200px; /* Width of the switch container */
-    height: 50px; /* Height of the switch container */
+    height: 200px; /* Height of the switch container */
     border-radius: 1000px; /* Round the corners to make it circular */
 }
 
