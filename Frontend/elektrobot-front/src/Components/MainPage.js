@@ -5,7 +5,7 @@ import "./ImageSection.css";
 const MainPage = () => {
   return (
     <div className="mainPage">
-      <img className="kosiara" src={require("./Kosiara.jpg")} alt=""></img>
+      <img className="kosiara" src={require("./Images/Kosiara.jpg")} alt=""></img>
       <div className="imgSection">
         <div className="sectionLeft">
           <div className="textContainerLeft">
@@ -13,12 +13,12 @@ const MainPage = () => {
             gwarantujemy, że nasze roboty nie tylko poradzą sobie, ale także podniosą standard zaistniały na Twoim ogrodzie, zapewniając mu zawsze nienaganny wygląd.
           </div>
           <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("./Kosiarajedzie.png")} alt=""></img>
+            <img className="imgLeft" src={require("./Images/Kosiarajedzie.png")} alt=""></img>
           </div>
         </div>
         <div className="sectionLeft">
           <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("./KosiaraFamiliowa.png")} alt=""></img>
+            <img className="imgLeft" src={require("./Images/KosiaraFamiliowa.png")} alt=""></img>
           </div>
           <div className="textContainerLeft second">
             Ciesz się większą ilością wolnego czasu na rzeczy, które naprawdę kochasz! Oszczędź godziny, które dotychczas poświęcałeś na koszenie trawy, pozwalając inteligentnemu
@@ -32,13 +32,13 @@ const MainPage = () => {
             od małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
           </div>
           <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("./KosiaraZieleniara.png")} alt=""></img>
+            <img className="imgLeft" src={require("./Images/KosiaraZieleniara.png")} alt=""></img>
           </div>
         </div>
       </div>
-      <img className="ofertaButton" src={require("./Oferta.png")} alt=""></img>
-      <img className="logoComment" src={require("./AmbrogioComment.png")} alt=""></img>
-      <img className="footer" src={require("./footer.png")} alt=""></img>
+      <img className="ofertaButton" src={require("./Images/Oferta.png")} alt=""></img>
+      <img className="logoComment" src={require("./Images/AmbrogioComment.png")} alt=""></img>
+      <img className="footer" src={require("./Images/footer.png")} alt=""></img>
     </div>
   );
 };

@@ -15,7 +15,7 @@ function ResponsiveNavBar() {
       {menuOpen ? (
         <nav className="menuOpen">
         <div className="navbarBarsContainer">
-        <img onClick={ChangeMenuState} className="navbarBars" src={require("./bars.png")} alt="" />
+        <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
         </div>
           
           <div className="navbarContainer">
@@ -26,16 +26,16 @@ function ResponsiveNavBar() {
         </nav>
       ) : (
         <nav className="navbar">
-          <img className="navbarLogo" src={require("./logo.png")} alt="" />
+          <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
           <div className="navbarContainer">
             {navbarButtons.map((title) => {
               return <button className="navbarButton">{title}</button>;
             })}
           </div>
           <div className="icons">
-            <img className="navbarBasket" src={require("./basket.png")} alt="" />
-            <img className="navbarPerson" src={require("./person.png")} alt="" />
-            <img onClick={ChangeMenuState} className="navbarBars" src={require("./bars.png")} alt="" />
+            <img className="navbarBasket" src={require("./Images/basket.png")} alt="" />
+            <img className="navbarPerson" src={require("./Images/person.png")} alt="" />
+            <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
           </div>
         </nav>
       )}
