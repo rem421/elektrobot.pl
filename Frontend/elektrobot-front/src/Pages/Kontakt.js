@@ -1,9 +1,12 @@
 import React from "react";
-
+import MowerCard from "../Components/MowerCard";
+import "../Components/MowerCard.css"
 const Kontakt = () => {
   return (
     <div>
-      <h2>Kontakt</h2>
+    <div className="test"></div>
+      <MowerCard/>
+      <div className="test"></div>
     </div>
   );
 };
