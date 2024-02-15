@@ -8,7 +8,7 @@ const Kontakt = () => {
   return (
     <div>
       <div className="test"></div>
-      <Splide options={{ rewind: true, type: "loop", drag: "free", snap: true, perPage: "3", wheel: true, wheelSleep: "500"}}>
+      <Splide options={{ rewind: true, type: "loop", drag: "free", snap: true, perPage: "4", wheel: true, wheelSleep: "500"}}>
         <SplideSlide>
           <MowerCard />
         </SplideSlide>

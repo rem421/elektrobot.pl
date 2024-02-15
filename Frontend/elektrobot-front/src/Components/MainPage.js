@@ -1,7 +1,10 @@
 import React from "react";
 import "./MainPage.css";
 import "./ImageSection.css";
-
+import MowerCard from "./MowerCard";
+import "./MowerCard.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import '@splidejs/react-splide/css';
 const MainPage = () => {
   return (
     <div className="mainPage">
@@ -39,6 +42,7 @@ const MainPage = () => {
       </div>
       <img className="ofertaButton" src={require("./Images/Oferta.png")} alt=""></img>
       <img className="logoComment" src={require("./Images/AmbrogioComment.png")} alt=""></img>
+      
       {/* <img className="footer" src={require("./Images/footer.png")} alt=""></img> */}
     </div>
   );
