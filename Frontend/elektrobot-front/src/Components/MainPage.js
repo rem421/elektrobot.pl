@@ -38,6 +38,7 @@ const MainPage = () => {
       </div>
       <img className="ofertaButton" src={require("./Oferta.png")} alt=""></img>
       <img className="logoComment" src={require("./AmbrogioComment.png")} alt=""></img>
+      <img className="footer" src={require("./footer.png")} alt=""></img>
     </div>
   );
 };

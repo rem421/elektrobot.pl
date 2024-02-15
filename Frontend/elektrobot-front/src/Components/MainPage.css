@@ -1,4 +1,8 @@
 .mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .kosiara {
@@ -16,4 +20,8 @@
 }
 .logoComment{
   max-width: 80%;
+}
+.footer{
+  bottom: 0;
+  width: 100%;
 }
