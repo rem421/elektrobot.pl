@@ -8,7 +8,7 @@
   border-radius: 1.5rem;
   transition: 0.5s;
   padding: 2vw;
-  height: 50vh;
+  height: 30vw;
 }
 .cardContainer:hover {
   box-shadow: 0 0 10px rgb(55, 55, 55);
@@ -39,4 +39,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.price{
+    color: rgba(128, 128, 128, 0.693);
+    text-align: end;
+    font-size: 1.3vw; 
+}
+@media screen and (max-width: 768px) {
+    .cardContainer{
+        height: 50vw;
+        width: 30vw;
+        border-radius: 1rem;
+    }
+    .name{
+        font-size: 2vw;
+    }
+    .mowerImg {
+        width: 25vw;
+      }
+    .price{
+        font-size: 2vw;
+    }
+    .additionalInfo {
+        font-size: 2vw;
+    }
 }

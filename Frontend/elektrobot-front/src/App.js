@@ -1,11 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
 import './App.css';
 
 import ResponsiveNavBar from './Components/ResponsiveNavBar';
-import Home from './Components/MainPage';
 import Footer from './Components/Footer';
 
+import Home from './Components/MainPage';
 import Kontakt from './Pages/Kontakt';
+import RobotPreview from './Pages/RobotPreview';
+import NoPage from './Pages/NoPage';
+import Shop from './Pages/Shop';
+import Uslugi from './Pages/Uslugi';
 
 
 
@@ -13,14 +17,17 @@ function App() {
   return (
     <div className="App">
      <ResponsiveNavBar/>
-     <Router>  
+     <BrowserRouter> 
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/kontakt" element={<Kontakt />} />
-         
+          <Route path="home" element={<Home />} />
+          <Route path="kontakt" element={<Kontakt />} />
+          <Route path="podglad" element={<RobotPreview />} />
+          <Route path="sklep" element={<Shop />} />
+          <Route path="uslugi" element={<Uslugi />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     <Footer/>
     </div>
   );

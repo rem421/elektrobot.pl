@@ -5,7 +5,8 @@ import "./ImageSection.css";
 const MainPage = () => {
   return (
     <div className="mainPage">
-      <img className="kosiara" src={require("./Images/Kosiara.jpg")} alt=""></img>
+        <img className="kosiara" src={require("./Images/Kosiara.jpg")} alt=""></img>
+     
       <div className="imgSection">
         <div className="sectionLeft">
           <div className="textContainerLeft">
