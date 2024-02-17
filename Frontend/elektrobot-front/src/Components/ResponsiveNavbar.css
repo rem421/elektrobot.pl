@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 767px) {
   .navbarContainer {
-    display: none;
+    display: none !important; 
   }
   .navbarLogo {
     margin-left: 5vw;

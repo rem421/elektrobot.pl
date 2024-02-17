@@ -7,6 +7,7 @@ const ShopTypeSwitchButton = () =>{
                 <input type="checkbox" id="switcher"></input>
                 <label for="switcher"></label>
             </span>
+            
         </>
     )
 }

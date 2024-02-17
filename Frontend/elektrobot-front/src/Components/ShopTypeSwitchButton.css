@@ -1,101 +1,78 @@
-/* Set background color and center the content vertically and horizontally */
-/* body {
-    background: #464646; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    flex-direction: column; 
-} */
-
-/* Styling for the switch container */
 .switch {
-    
-    position: relative; /* Position relative for absolute positioning inside */
-    width: 200px; /* Width of the switch container */
-    height: 200px; /* Height of the switch container */
-    border-radius: 1000px; /* Round the corners to make it circular */
+    top: 30px;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border-radius: 1000px;
 }
 
-/* Styling for the switch input */
 .switch input {
-    appearance: none; /* Remove default styling */
-    width: 250px; /* Width of the input area */
-    height: 17px; /* Height of the input area */
-    border-radius: 1000px; /* Round the corners to make it circular */
-    background: #2E2E2E; /* Background color of the switch */
-    outline: none; /* Remove outline */
+    appearance: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 1000px;
+    background: #2E2E2E;
+    outline: none;
 }
 
-/* Styling for pseudo-elements (before and after) of the switch input */
 .switch input::before,
 .switch input::after {
-    z-index: 2; /* Ensure pseudo-elements are above the input */
-    position: absolute; /* Position relative to the switch container */
-    top: 35%; /* Position vertically */
-    transform: translateY(-50%); /* Center vertically */
-    font-weight: normal; /* Set font weight */
-    transition: color 0.5s; /* Transition effect for color change */
-    font-size: 14px; /* Adjusted font size */
+    z-index: 2;
+    position: absolute;
+    font-size: 13px;
+    top: 0;
+    transform: translateY(35%);
+    font-weight: normal;
+    transition: color 0.5s;
 }
 
-/* Styling for the text before the switch */
-.switch input::before{
-    content: "Roboty koszące"; /* Text before the switch */
-    left: 20px; /* Position from the left */
-    color: #2e2e2e; /* Initial color of the text */
+.switch input::before {
+    content: "Roboty koszące";
+    left: 130px;
+    color: #2e2e2e;
 }
 
-/* Styling for the text after the switch */
-.switch input::after{
-    content: "Akcesoria"; /* Text after the switch */
-    right: 20px; /* Position from the right */
-    color: #eeeeee; /* Initial color of the text */
+.switch input::after {
+    content: "Akcesoria";
+    right: 142px;
+    color: #eeeeee;
 }
 
-/* Styling for the checked state of the switch */
 .switch input:checked {
-    background: #2E2E2E; /* Background color of the switch when checked */
+    background: #2E2E2E;
 }
 
-/* Styling for the label */
-.switch label{
-    z-index: 1; /* Ensure label is above other elements */
-    position: absolute; /* Position relative to the switch container */
-    top: 0px; /* Position from the top */
-    bottom: 6px; /* Position from the bottom */
-    border-radius: 1000px; /* Round the corners to make it circular */
-    background: #FFFFFF; /* Background color of the moving slider part */
-    mix-blend-mode: difference; /* Blend mode to make text color #2E2E2E when slider is on top */
+.switch label {
+    z-index: 1;
+    position: absolute;
+    height: 35px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    mix-blend-mode: difference;
 }
 
-/* Styling for the moving slider part when the switch is checked */
-.switch input:checked+label{
-    left: 0px; /* Position from the left when checked */
-    right: 100px; /* Position from the right when checked */
-    background: #FFFFFF; /* Background color of the moving slider part when checked */
-    transition: left 0.5s, right 0.4s 0.2s, background 0.5s; /* Add transition for background color */
+.switch input:checked+label {
+    left: 100px;
+    right: 235px;
+    background: #FFFFFF;
+    transition: left 0.5s, right 0.4s 0.2s, background 0.5s;
 }
 
-/* Styling for the unchecked state of the switch */
-.switch input:not(:checked){
-    transition: none; /* Remove transition for background color */
+.switch input:not(:checked) {
+    transition: none;
 }
 
-/* Styling for the text before the switch when it's unchecked */
 .switch input:not(:checked)::before {
-    color: #eeeeee; /* Change color when not checked */
+    color: #eeeeee;
 }
 
-/* Styling for the text after the switch when it's unchecked */
-.switch input:not(:checked)::after{
-    color: #2E2E2E; /* Change color when not checked */
+.switch input:not(:checked)::after {
+    color: #2E2E2E;
 }
 
-/* Styling for the label when the switch is unchecked */
-.switch input:not(:checked) +label{
-    left: 140px; /* Position from the left when unchecked */
-    right: 0px; /* Position from the right when unchecked */
-    background: #EEEEEE; /* Background color of the moving slider part when unchecked */
-    transition: left 0.4s 0.2s, right 0.5s; /* Add transition for position */
+.switch input:not(:checked) + label {
+    left: 255px;
+    right: 100px;
+    background: #EEEEEE;
+    transition: left 0.4s 0.2s, right 0.5s;
 }

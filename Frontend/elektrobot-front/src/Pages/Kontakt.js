@@ -3,7 +3,6 @@ import MowerCard from "../Components/MowerCard";
 import "../Components/MowerCard.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import ShopTypeSwitchButton from "../Components/ShopTypeSwitchButton";
 import "../Components/ShopTypeSwitchButton.css";
 
 const Kontakt = () => {

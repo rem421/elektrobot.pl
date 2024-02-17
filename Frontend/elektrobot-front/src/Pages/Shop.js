@@ -1,11 +1,10 @@
 import React from "react";
-import "../Components/ShopTypeSwitchButton.css"
-import ShopTypeSwitchButton from "../Components/ShopTypeSwitchButton";
+import ShopHeroSection from "../Components/ShopHeroSection.js";
+
 const Shop = () =>{
     return(
         <div>
-            <h2>Shop</h2>
-           <ShopTypeSwitchButton></ShopTypeSwitchButton>
+            <ShopHeroSection></ShopHeroSection>  
         </div>
     )
 }
