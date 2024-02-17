@@ -19,7 +19,7 @@ const RobotPreview = () => {
         </div>
 
         <div className="imgContainer">
-          <img className="mowerImg" src={require("../Components/Images/buyMower.png")} alt=""></img>
+          <img className="RobotPreviewImg" src={require("../Components/Images/buyMower.png")} alt=""></img>
         </div>
         <img className="mowerInfo" src={require("../Components/Images/tiles.png")} alt=""></img>
         <p> Co cechuje roboty next line?</p>
@@ -50,8 +50,8 @@ const RobotPreview = () => {
           <p className="header">DANE TECHNICZNE</p>
           <table>
             <tr>
-              <td>{kosiaraDetails["2"].Nazwa}</td>
-              <td>{kosiaraDetails["2"].Cena}</td>
+              {/* <td>{kosiaraDetails["2"].Nazwa}</td>
+              <td>{kosiaraDetails["2"].Cena}</td> */}
             </tr>
           </table>
         </div>
