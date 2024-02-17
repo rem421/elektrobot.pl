@@ -1,6 +1,7 @@
 .logo {
   width: 2vw;
-  
+  display: flex;
+  align-self: center;
 }
 .footerBody {
   background: rgba(20, 20, 20, 1);

@@ -9,6 +9,7 @@
   align-items: center;
   gap: 50px;
   width: 100%;
+  z-index: 100;
 }
 .navbarContainer{
   display: flex;

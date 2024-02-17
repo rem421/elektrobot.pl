@@ -13,21 +13,22 @@
 }
 
 .sectionLeft{
+   
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1vw;
+   
 }
 .imgLeft{
    
-    height: 40vw
+    max-height: 40vw
 }
 .second{
     text-align: right !important;
+   
 }
-.imgSection{
-    margin-top: 5vh;
-}
+
 @media screen and (max-width: 767px) {
     .imgContainerLeft{
         max-width: 60vw;
