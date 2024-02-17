@@ -53,6 +53,7 @@
         height: 30vw;
         width: 20vw;
         border-radius: 1rem;
+  box-shadow: 0 0 5px rgb(55, 55, 55);
       
     }
     .name{
@@ -71,5 +72,11 @@
 @media screen and (max-width: 400px){
 .cardContainer{
   border-radius: 0.5rem;
+}
+.price{
+  font-size: 4px;
+}
+.additionalInfo {
+  font-size: 6px;
 }
 }
