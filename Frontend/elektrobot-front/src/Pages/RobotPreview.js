@@ -1,9 +1,47 @@
 import React from "react";
-const RobotPreview = () =>{
-    return(
-        <div>
-            <h2>RobotPreview</h2>
-        </div>
-    )
-}
-export default RobotPreview
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+const RobotPreview = () => {
+  var main = new Splide(".main-slider", {
+    type: "fade",
+    heightRatio: 0.5,
+    pagination: false,
+    arrows: false,
+    cover: true,
+  });
+
+  var thumbnails = new Splide(".thumbnail-slider", {
+    rewind: true,
+    fixedWidth: 104,
+    fixedHeight: 58,
+    isNavigation: true,
+    gap: 10,
+    focus: "center",
+    pagination: false,
+    cover: true,
+    dragMinThreshold: {
+      mouse: 4,
+      touch: 10,
+    },
+    breakpoints: {
+      640: {
+        fixedWidth: 66,
+        fixedHeight: 38,
+      },
+    },
+  });
+  main.sync(thumbnails);
+  
+  return (
+    <div className="pageContainer">
+      <div className="preview">
+        <p className="robotTitle">Kup "Nazwa Robota"</p>
+        <p className="suggestedPrice"></p>
+     
+        <div className=".main-slider"></div>
+        <div className=".thumbnail-slider"></div>
+      </div>
+      <div className="summary"></div>
+    </div>
+  );
+};
+export default RobotPreview;
