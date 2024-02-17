@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .middleLine {
+  /* .middleLine {
     display: none;
   }
   .contact{
@@ -104,5 +104,26 @@
   }
   .logo{
     width: 8vw;
+  } */
+
+  .footerBody{
+    height: 30vh;
+  }
+  .logo{
+    width: 8vw;
+  } 
+  .link{
+    font-size: 2vw;
+  }
+  .contact{
+    font-size: 2vw;
+  }
+  .contactField{
+    width: 20vw;
+    height: 6vw;
+    justify-content: space-between;
+  }
+  .fieldText{
+    font-size: 2vw;
   }
 }

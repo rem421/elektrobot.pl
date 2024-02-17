@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <div className="mainPage">
       <img className="kosiara" src={require("./Images/Kosiara.jpg")} alt=""></img>
-      <div className="imgSection"></div>
+      <div className="imgSection">
       <div className="sectionLeft">
         <div className="textContainerLeft">
           Roboty koszące sprawnie dostosowują się do topografii ogrodu, eliminując konieczność manualnej interwencji. Bez względu na kształt, nachylenie czy przeszkody,
@@ -37,6 +37,7 @@ const MainPage = () => {
         <div className="imgContainerLeft">
           <img className="imgLeft" src={require("./Images/KosiaraZieleniara.png")} alt=""></img>
         </div>
+      </div>
       </div>
       <img className="ofertaButton" src={require("./Images/Oferta.png")} alt=""></img>
 
