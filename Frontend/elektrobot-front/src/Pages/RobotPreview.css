@@ -1,0 +1,23 @@
+.preview{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+}
+.pageContainer{
+    display: flex;
+}
+.mowerImg{
+    width: 50vw;
+}
+.mowerInfo{
+    width: 40vw;
+    
+}
+.imgContainer{
+    padding: 1vw;
+    box-shadow: 0 0 10px rgb(140, 140, 140);
+    border-radius: 1rem;
+}
