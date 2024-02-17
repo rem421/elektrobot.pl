@@ -1,18 +1,9 @@
-/* Set background color and center the content vertically and horizontally */
-/* body {
-    background: #464646; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    flex-direction: column; 
-} */
-
+/*
 /* Styling for the switch container */
 .switch {
     
     position: relative; /* Position relative for absolute positioning inside */
-    width: 200px; /* Width of the switch container */
+    width: 500px; /* Width of the switch container */
     height: 200px; /* Height of the switch container */
     border-radius: 1000px; /* Round the corners to make it circular */
 }
@@ -20,8 +11,8 @@
 /* Styling for the switch input */
 .switch input {
     appearance: none; /* Remove default styling */
-    width: 250px; /* Width of the input area */
-    height: 17px; /* Height of the input area */
+    width: 400px; /* Width of the input area */
+    height: 55px; /* Height of the input area */
     border-radius: 1000px; /* Round the corners to make it circular */
     background: #2E2E2E; /* Background color of the switch */
     outline: none; /* Remove outline */
@@ -32,11 +23,12 @@
 .switch input::after {
     z-index: 2; /* Ensure pseudo-elements are above the input */
     position: absolute; /* Position relative to the switch container */
-    top: 35%; /* Position vertically */
-    transform: translateY(-50%); /* Center vertically */
+    font-size: 25px; /* Adjusted font size */
+    top: 0; /* Position vertically */
+    transform: translateY(-80%); /* Center vertically */
     font-weight: normal; /* Set font weight */
     transition: color 0.5s; /* Transition effect for color change */
-    font-size: 14px; /* Adjusted font size */
+    
 }
 
 /* Styling for the text before the switch */
@@ -62,9 +54,10 @@
 .switch label{
     z-index: 1; /* Ensure label is above other elements */
     position: absolute; /* Position relative to the switch container */
-    top: 0px; /* Position from the top */
-    bottom: 6px; /* Position from the bottom */
-    border-radius: 1000px; /* Round the corners to make it circular */
+
+    height: 55px;
+
+    border-radius: 50px; /* Round the corners to make it circular */
     background: #FFFFFF; /* Background color of the moving slider part */
     mix-blend-mode: difference; /* Blend mode to make text color #2E2E2E when slider is on top */
 }
@@ -99,3 +92,4 @@
     background: #EEEEEE; /* Background color of the moving slider part when unchecked */
     transition: left 0.4s 0.2s, right 0.5s; /* Add transition for position */
 }
+   
