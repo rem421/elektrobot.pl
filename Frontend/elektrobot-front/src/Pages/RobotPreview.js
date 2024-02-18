@@ -31,7 +31,7 @@ const RobotPreview = () => {
           </div>
 
           <div className="imgContainer">
-            <img className="mowerImg" src={require("../Components/Images/buyMower.png")} alt=""></img>
+            <img className="RobotPreviewImg" src={require("../Components/Images/buyMower.png")} alt=""></img>
           </div>
           <img className="mowerInfo" src={require("../Components/Images/tiles.png")} alt=""></img>
           <p> Co cechuje roboty next line?</p>
