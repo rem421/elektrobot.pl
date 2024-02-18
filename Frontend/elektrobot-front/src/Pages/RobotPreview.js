@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./RobotPreview.css";
 import jsonData from "./localization.json";
 
-const RobotPreview = () => {
+const RobotPreview = (props) => {
   const [kosiaraDetails, setKosiaraDetails] = useState([]);
   const [chosenMower, setChosenMower] = useState([]);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -14,7 +14,7 @@ const RobotPreview = () => {
   useEffect(() => {
     console.log(`Whole Json: ${kosiaraDetails}`);
     if (kosiaraDetails.length > 0) {
-      setChosenMower(kosiaraDetails.find((mower) => mower.Nazwa === "Twenty-ZR-3"));
+      setChosenMower(kosiaraDetails.find((mower) => mower.Nazwa === props.name));
     }
   }, [kosiaraDetails]);
 
@@ -42,7 +42,7 @@ const RobotPreview = () => {
           </div>
 
           <div className="imgContainer">
-            <img className="RobotPreviewImg" src={require("../Components/Images/buyMower.png")} alt=""></img>
+            <img className="RobotPreviewImg" src={require(chosenMower.Img_path)} alt=""></img>
           </div>
           <img className="mowerInfo" src={require("../Components/Images/tiles.png")} alt=""></img>
           <p className="sectionTitle"> Co cechuje roboty next line?</p>
@@ -137,8 +137,12 @@ const RobotPreview = () => {
                     <td className="secondTable">{chosenMower.Typ_łączności}</td>
                   </tr>
                   <tr>
-                    <td className="firstTable"></td>
-                    <td className="secondTable"></td>
+                    <td className="firstTable">Typ łączności</td>
+                    <td className="secondTable">{chosenMower.Typ_łączności}</td>
+                  </tr>
+                  <tr>
+                    <td className="firstTable">Panel sterowania</td>
+                    <td className="secondTable">{chosenMower.Panel_sterowania}</td>
                   </tr>
                 </tbody>
               </table>

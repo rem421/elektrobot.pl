@@ -1,5 +1,4 @@
 import React from "react";
-import "../Components/MowerCard.css";
 import "@splidejs/react-splide/css";
 import "../Components/ShopTypeSwitchButton.css";
 import emailjs from "@emailjs/browser";
