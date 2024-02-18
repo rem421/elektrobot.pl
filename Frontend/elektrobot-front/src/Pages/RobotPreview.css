@@ -4,27 +4,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8vw;
+    
 }
 .pageContainer{
     display: flex;
 }
 .RobotPreviewImg{
-    width: 50vw;
+    width: 40vw;
 }
 .mowerInfo{
     width: 40vw;
+    margin-bottom: 6vw;
     
 }
 .imgContainer{
     padding: 1vw;
     box-shadow: 0 0 10px rgb(140, 140, 140);
     border-radius: 1rem;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
 }
 td, tr{
    
-  padding: 8px;
-  font-size: 1.5vw;
+  padding: 1vw;
+  font-size: 1vw;
+}
+.secondTable{
+    color: rgb(98, 98, 98);
 }
 table{
     border-collapse: collapse;
@@ -39,4 +45,127 @@ table{
 .secondTable{
     text-align: center !important;
     padding-left: 3vw;
+}
+.robotTitle{
+    margin-top: 2.5vw;
+    font-size: 4vw;
+    font-weight: 250;
+    font-weight: 400;
+}
+.suggestedPrice{
+    text-align: left;
+}
+.tileDesc{
+    width:40vw;
+    margin-bottom: 4vw;
+}
+.sectionTitle{
+    font-size: 6vw;
+    font-weight: 200;
+    width: 50vw;
+    margin-bottom: 5vw;
+}
+.tileTitle{
+    font-size: 3vw;
+    font-weight: 250;
+}
+.specs{
+    font-size: 4vw;
+
+}
+.wholeTable{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-right: 10vw;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(230, 230, 230);
+    padding: 2vw;
+    border-radius: 1rem;
+    height: auto;
+    position: fixed;
+    left: 65vw;
+    top: 7vh;
+    box-shadow: 0 0 10px rgb(140, 140, 140);
+    z-index: 1;
+    
+
+}
+.summaryImg{
+    width: 25vw;
+    margin-bottom: 4vw;
+}
+.orderButton{
+   border: none;
+   color: white;
+   background: rgba(45, 45, 45, 1);
+   padding: 1vw;
+   border-radius: 0.5rem;
+   font-weight: 200;
+   font-size: 1.5vw;
+
+}
+.summaryText{
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 4vw;
+}
+@media screen and (max-width: 768px) {
+
+    .preview{
+        width: 99vw !important;
+    }
+    .tileDesc{
+        width:80vw;
+        margin-bottom: 4vw;
+    }
+    .sectionTitle{
+        font-size: 6vw;
+        font-weight: 200;
+        width: 50vw;
+        margin-bottom: 5vw;
+       
+    }
+    table{
+        width: 80vw;
+        height: 80vh;
+    }
+    td, tr{
+   
+        padding: 1vw;
+        font-size: 3vw;
+      }
+      .tileTitle{
+        font-size: 6vw;
+        font-weight: 250;
+    }
+    .specs{
+        margin-top: 5vh;
+        font-size: 4vw;
+    
+    }
+    .RobotPreviewImg{
+        width: 80vw;
+    }
+    .mowerInfo{
+        width: 80vw;
+        margin-bottom: 6vw;
+        
+    }
+    .title-buy{
+        align-self: flex-start;
+        margin-left: 8vw;
+    }
+    .tileDesc{
+        font-size: 2.5vw;
+    }
+    .suggestedPrice{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 400px){
+
 }
