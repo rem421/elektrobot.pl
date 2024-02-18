@@ -21,3 +21,22 @@
     box-shadow: 0 0 10px rgb(140, 140, 140);
     border-radius: 1rem;
 }
+td, tr{
+   
+  padding: 8px;
+  font-size: 1.5vw;
+}
+table{
+    border-collapse: collapse;
+    width: 45vw;
+}
+.firstTable{
+    border-right: solid 2px;
+    text-align: right;
+    padding-right: 2vw;
+    
+}
+.secondTable{
+    text-align: center !important;
+    padding-left: 3vw;
+}
