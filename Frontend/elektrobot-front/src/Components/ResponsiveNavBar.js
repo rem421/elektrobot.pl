@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./ResponsiveNavbar.css";
 
 function ResponsiveNavBar() {
-  const navbarButtons = ["Roboty koszące", "Usługi", "Akcesoria", "Kontakt"];
   const [menuOpen, SetMenuOpen] = useState(false);
   const ChangeMenuState = () => {
     SetMenuOpen(!menuOpen);
@@ -14,23 +14,39 @@ function ResponsiveNavBar() {
     <>
       {menuOpen ? (
         <nav className="menuOpen">
-        <div className="navbarBarsContainer">
-        <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
-        </div>
-          
+          <div className="navbarBarsContainer">
+            <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
+          </div>
+
           <div className="navbarContainer">
-            {navbarButtons.map((title) => {
-              return <button className="navbarButton">{title}</button>;
-            })}
+          <Link className="navbarButton" to="/sklep">
+              <li className="navbarButton">Sklep</li>
+            </Link>
+            <Link className="navbarButton" to="/home">
+              <li className="navbarButton">Roboty koszące</li>
+            </Link>
+
+            <li className="navbarButton">Usługi</li>
+            <Link className="navbarButton" to="/kontakt">
+              <li className="navbarButton">Kontakt</li>
+            </Link>
           </div>
         </nav>
       ) : (
         <nav className="navbar">
           <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
           <div className="navbarContainer">
-            {navbarButtons.map((title) => {
-              return <button className="navbarButton">{title}</button>;
-            })}
+            <Link className="navbarButton" to="/sklep">
+              <li className="navbarButton">Sklep</li>
+            </Link>
+            <Link className="navbarButton" to="/home">
+              <li className="navbarButton">Roboty koszące</li>
+            </Link>
+
+            <li className="navbarButton">Usługi</li>
+            <Link className="navbarButton" to="/podglad">
+              <li className="navbarButton">Kontakt</li>
+            </Link>
           </div>
           <div className="icons">
             <img className="navbarBasket" src={require("./Images/basket.png")} alt="" />

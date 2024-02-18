@@ -27,12 +27,14 @@
 }
 
 .switch input::before {
+    z-index: 4;
     content: "Roboty koszące";
     left: 130px;
     color: #2e2e2e;
 }
 
 .switch input::after {
+    z-index: 4;
     content: "Akcesoria";
     right: 142px;
     color: #eeeeee;

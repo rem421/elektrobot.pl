@@ -54,6 +54,9 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+  color: black !important;
 }
 .navbarBars {
   display: none;
