@@ -4,25 +4,25 @@
 }
 .textContainerLeft{
     max-width: calc(100%/5);
-    font-size: 1.6vw;
+    font-size: 1.vw;
     text-align: left;
     border-radius: 15px;
     
-    font-weight: bold;
+    font-weight: 300;
     
 }
 
 .sectionLeft{
-   margin-top: 5vw;
+    margin-top: vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 0.5vw;
    
 }
 .imgLeft{
-   
-    max-height: 40vw
+    
+    max-height: 17vw
 }
 .second{
     text-align: right !important;
@@ -35,7 +35,7 @@
     }
     .textContainerLeft{
         max-width: calc(100%/4);
-        font-size: 2vw;
+        font-size: 1vw;
         text-align: left;
     }
     .second{

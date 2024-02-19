@@ -26,37 +26,7 @@ const MainPage = (props) => {
   return (
     <div className="mainPage">
       <img className="kosiara" src={require("../Components/Images/Kosiara.jpg")} alt=""></img>
-      <div className="imgSection">
-        <div className="sectionLeft">
-          <div className="textContainerLeft">
-            Roboty koszące sprawnie dostosowują się do topografii ogrodu, eliminując konieczność manualnej interwencji. Bez względu na kształt, nachylenie czy przeszkody,
-            gwarantujemy, że nasze roboty nie tylko poradzą sobie, ale także podniosą standard zaistniały na Twoim ogrodzie, zapewniając mu zawsze nienaganny wygląd.
-          </div>
-          <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("../Components/Images/Kosiarajedzie.png")} alt=""></img>
-          </div>
-        </div>
-        <div className="sectionLeft adjust">
-          <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("../Components/Images/KosiaraFamiliowa.png")} alt=""></img>
-          </div>
-          <div className="textContainerLeft second">
-            Ciesz się większą ilością wolnego czasu na rzeczy, które naprawdę kochasz! Oszczędź godziny, które dotychczas poświęcałeś na koszenie trawy, pozwalając inteligentnemu
-            robotowi zadbać o Twój ogród. To nie tylko zakup, to inwestycja w swój czas i spokój ducha – teraz możesz skupić się na rodzinie, hobby czy relaksie, zamiast pracować w
-            ogrodzie.
-          </div>
-        </div>
-        <div className="sectionLeft">
-          <div className="textContainerLeft">
-            Z ogromnym wyborem modeli automatycznych robotów koszących u nas dostępnych, każdy znajdzie idealny sprzęt dopasowany do swoich potrzeb. Bez względu na rozmiar ogrodu,
-            od małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
-          </div>
-          <div className="imgContainerLeft">
-            <img className="imgLeft" src={require("../Components/Images/KosiaraZieleniara.png")} alt=""></img>
-          </div>
-        </div>
-      </div>
-      <img className="ofertaButton" src={require("../Components/Images/Oferta.png")} alt=""></img>
+    
 
       <img className="logoComment" src={require("../Components/Images/AmbrogioComment.png")} alt=""></img>
       <p className="desc">Cześć, jestem Ambrogio – Innowacyjny, a przy tym łatwy w użyciu robot koszący Made in Italy</p>
@@ -167,9 +137,43 @@ const MainPage = (props) => {
           })}
         </Splide>
       )}
+      
       <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
       <div className="dash"></div>
+      <div className="imgSection">
+        <div className="sectionLeft">
+          <div className="textContainerLeft">
+            Roboty koszące sprawnie dostosowują się do topografii ogrodu, eliminując konieczność manualnej interwencji. Bez względu na kształt, nachylenie czy przeszkody,
+            gwarantujemy, że nasze roboty nie tylko poradzą sobie, ale także podniosą standard zaistniały na Twoim ogrodzie, zapewniając mu zawsze nienaganny wygląd.
+          </div>
+          <div className="imgContainerLeft">
+            <img className="imgLeft" src={require("../Components/Images/Kosiarajedzie.png")} alt=""></img>
+          </div>
+        </div>
+        <div className="sectionLeft adjust">
+          <div className="imgContainerLeft">
+            <img className="imgLeft" src={require("../Components/Images/KosiaraFamiliowa.png")} alt=""></img>
+          </div>
+          <div className="textContainerLeft second">
+            Ciesz się większą ilością wolnego czasu na rzeczy, które naprawdę kochasz! Oszczędź godziny, które dotychczas poświęcałeś na koszenie, pozwalając inteligentnemu
+            robotowi zadbać o Twój ogród. To nie tylko zakup, to inwestycja w czas i spokój ducha – teraz możesz skupić się na rodzinie, hobby czy relaksie, zamiast pracować w
+            ogrodzie.
+          </div>
+        </div>
+        <div className="sectionLeft">
+          <div className="textContainerLeft">
+            Z ogromnym wyborem modeli automatycznych robotów koszących u nas dostępnych, każdy znajdzie idealny sprzęt dopasowany do potrzeb. Bez względu na rozmiar ogrodu,
+            od małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
+          </div>
+          <div className="imgContainerLeft">
+            <img className="imgLeft" src={require("../Components/Images/KosiaraZieleniara.png")} alt=""></img>
+          </div>
+        </div>
+      </div>
+      <img className="ofertaButton" src={require("../Components/Images/OfertaNoArrow.png")} alt=""></img>
+      <div className="dash"></div>
     </div>
+    
   );
 };
 export default MainPage;

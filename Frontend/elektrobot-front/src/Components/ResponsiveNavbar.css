@@ -80,7 +80,7 @@
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-
+  z-index: 100;
   background: rgba(230, 230, 230, 1);
   top: 0;
 }
@@ -91,6 +91,7 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
+  
 }
 .navbarButton{
   font-size: 14px;

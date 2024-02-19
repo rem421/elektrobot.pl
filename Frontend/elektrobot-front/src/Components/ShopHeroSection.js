@@ -5,7 +5,7 @@ import ShopTypeSwitchButton from "./ShopTypeSwitchButton"
 function ShopHeroSection(){
     return(
         <div className='shop-hero-container'>
-            <ShopTypeSwitchButton></ShopTypeSwitchButton>
+            {/* <ShopTypeSwitchButton></ShopTypeSwitchButton> */}
         </div>
         
     )
