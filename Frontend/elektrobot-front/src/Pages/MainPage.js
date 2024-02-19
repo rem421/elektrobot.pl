@@ -7,13 +7,14 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import jsonData from "./localization.json";
 import { useEffect, useState } from "react";
-const MainPage = () => {
+const MainPage = (props) => {
   const [kosiaraDetails, setKosiaraDetails] = useState([]);
   const [mammotionMowers, setMammotionMowers] = useState([]);
   const [husqvarnaMowers, setHusqvarnaMowers] = useState([]);
   const [ambrogioMowers, setAmbrogioMowers] = useState([]);
   useEffect(() => {
     setKosiaraDetails(jsonData);
+    console.log(props)
   }, []);
   useEffect(() => {
     if (kosiaraDetails.length > 0) {
@@ -78,6 +79,7 @@ const MainPage = () => {
             return (
               <SplideSlide>
                 <MowerCard
+                  setClicked={props.setClicked}
                   price={mower.Cena}
                   imgPath={mower.Img_path}
                   mowerName={mower.Nazwa}
@@ -115,6 +117,7 @@ const MainPage = () => {
             return (
               <SplideSlide>
                 <MowerCard
+                  setClicked={props.setClicked}
                   price={mower.Cena}
                   imgPath={mower.Img_path}
                   mowerName={mower.Nazwa}
@@ -151,6 +154,7 @@ const MainPage = () => {
             return (
               <SplideSlide>
                 <MowerCard
+                  setClicked={props.setClicked}
                   price={mower.Cena}
                   imgPath={mower.Img_path}
                   mowerName={mower.Nazwa}

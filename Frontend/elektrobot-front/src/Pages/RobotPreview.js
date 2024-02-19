@@ -1,48 +1,35 @@
 import React, { useState, useEffect } from "react";
 import "./RobotPreview.css";
-import jsonData from "./localization.json";
+import { Link } from "react-router-dom";
 
 const RobotPreview = (props) => {
-  const [kosiaraDetails, setKosiaraDetails] = useState([]);
-  const [chosenMower, setChosenMower] = useState([]);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    setKosiaraDetails(jsonData);
-  }, []);
-
-  useEffect(() => {
-    console.log(`Whole Json: ${kosiaraDetails}`);
-    if (kosiaraDetails.length > 0) {
-      setChosenMower(kosiaraDetails.find((mower) => mower.Nazwa === props.name));
-    }
-  }, [kosiaraDetails]);
-
-  useEffect(() => {
-    console.log(`Chosen mower:${chosenMower.Rodzaj_nawigacji}`);
-  }, [chosenMower]);
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+  useEffect(() => {
+    console.log(props.clicked);
+  }, []);
   return (
-    chosenMower && (
+    props.clicked && (
       <div className="pageContainer">
         <div className="preview">
           <div className="title-buy">
-            <p className="robotTitle">Kup "Nazwa Robota"</p>
-            <p className="suggestedPrice">Cena już od "cena"</p>
+            <p className="robotTitle">Kup {props.clicked.Nazwa}</p>
+            <p className="suggestedPrice">Cena już od {props.clicked.Cena} zł</p>
           </div>
 
           <div className="imgContainer">
-            <img className="RobotPreviewImg" src={require(chosenMower.Img_path)} alt=""></img>
+            <img className="RobotPreviewImg" src="https://i.ibb.co/nsF9CZh/LUBA-2-AWD.jpg" alt=""></img>
           </div>
           <img className="mowerInfo" src={require("../Components/Images/tiles.png")} alt=""></img>
           <p className="sectionTitle"> Co cechuje roboty next line?</p>
@@ -98,51 +85,51 @@ const RobotPreview = (props) => {
                   </tr>
                   <tr>
                     <td className="firstTable">Rodzaj nawigacji</td>
-                    <td className="secondTable">{chosenMower.Rodzaj_nawigacji}</td>
+                    <td className="secondTable">{props.clicked.Rodzaj_nawigacji}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Sterowanie za pomocą aplikacji</td>
-                    <td className="secondTable">{chosenMower.Sterowanie_za_pomocą_aplikacji}</td>
+                    <td className="secondTable">{props.clicked.Sterowanie_za_pomocą_aplikacji}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Maksymalna sugerowana powierzchnia m² (-20%)</td>
-                    <td className="secondTable">{chosenMower.Maksymalna_sugerowana_powierzchnia}</td>
+                    <td className="secondTable">{props.clicked.Maksymalna_sugerowana_powierzchnia}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Akumulator litowo-jonowy (25,9V)</td>
-                    <td className="secondTable">{chosenMower.Akumulator_litowo_jonowy}</td>
+                    <td className="secondTable">{props.clicked.Akumulator_litowo_jonowy}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Maksymalne nachylenie zboczy (%)</td>
-                    <td className="secondTable">{chosenMower.Maksymalne_nachylenie_zboczy}</td>
+                    <td className="secondTable">{props.clicked.Maksymalne_nachylenie_zboczy}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Średni czas pracy + -20%</td>
-                    <td className="secondTable">{chosenMower.Średni_czas_pracy}</td>
+                    <td className="secondTable">{props.clicked.Średni_czas_pracy}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Maksymalne, dopuszczalne nachylenie zboczy (%)</td>
-                    <td className="secondTable">{chosenMower.Maksymalne_dopuszczalne_nachylenie_zboczy}</td>
+                    <td className="secondTable">{props.clicked.Maksymalne_dopuszczalne_nachylenie_zboczy}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Rodzaj noża</td>
-                    <td className="secondTable">{chosenMower.Rodzaj_noża}</td>
+                    <td className="secondTable">{props.clicked.Rodzaj_noża}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Szerokość noża (cm)</td>
-                    <td className="secondTable">{chosenMower.Szerokość_noża}</td>
+                    <td className="secondTable">{props.clicked.Szerokość_noża}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Typ łączności</td>
-                    <td className="secondTable">{chosenMower.Typ_łączności}</td>
+                    <td className="secondTable">{props.clicked.Typ_łączności}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Typ łączności</td>
-                    <td className="secondTable">{chosenMower.Typ_łączności}</td>
+                    <td className="secondTable">{props.clicked.Typ_łączności}</td>
                   </tr>
                   <tr>
                     <td className="firstTable">Panel sterowania</td>
-                    <td className="secondTable">{chosenMower.Panel_sterowania}</td>
+                    <td className="secondTable">{props.clicked.Panel_sterowania}</td>
                   </tr>
                 </tbody>
               </table>
@@ -151,12 +138,15 @@ const RobotPreview = (props) => {
         </div>
 
         {screenWidth > 768 && (
-            <div className="summary">
-              <p className="summaryText">Podsumowanie</p>
-              <img className="summaryImg" src={require("../Components/Images/inProgress.png")} alt=""></img>
-              <button className="orderButton">Zapytaj o produkt</button>
-            </div>
-          )}
+          <div className="summary">
+            <p className="summaryText">Podsumowanie</p>
+            <img className="summaryImg" src={require("../Components/Images/inProgress.png")} alt=""></img>
+            <Link to="/kontakt">
+            <p className="orderButton">Zapytaj o produkt</p>
+
+            </Link>
+          </div>
+        )}
       </div>
     )
   );

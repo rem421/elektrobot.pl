@@ -27,6 +27,7 @@ function ResponsiveNavBar() {
             </Link>
 
             <li className="navbarButton">Usługi</li>
+
             <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
@@ -44,7 +45,7 @@ function ResponsiveNavBar() {
             </Link>
 
             <li className="navbarButton">Usługi</li>
-            <Link className="navbarButton" to="/podglad">
+            <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
           </div>

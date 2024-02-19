@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import jsonData from "./localization.json";
 import MowerCard from "./MowerCard.js";
 import "./Shop.css"
-const Shop = () => {
+const Shop = (props) => {
   const [kosiaraDetails, setKosiaraDetails] = useState([]);
   useEffect(() => {
     setKosiaraDetails(jsonData);
@@ -19,6 +19,7 @@ const Shop = () => {
               return (
                 
                   <MowerCard
+                    setClicked={props.setClicked}
                     price={mower.Cena}
                     imgPath={mower.Img_path}
                     mowerName={mower.Nazwa}
