@@ -41,7 +41,6 @@ function App() {
           <Route index element={<Home setClicked={clickHandler} />} />
           <Route path="home" element={<Home setClicked={clickHandler} />} />
           <Route path="kontakt" element={<Kontakt />} />
-
           <Route path="podglad" element={<RobotPreview clicked={mowerData} />} />
           <Route path="sklep" element={<Shop setClicked={clickHandler} />} />
           <Route path="uslugi" element={<Uslugi />} />

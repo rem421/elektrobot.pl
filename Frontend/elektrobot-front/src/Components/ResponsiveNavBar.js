@@ -5,6 +5,9 @@ import "./ResponsiveNavbar.css";
 
 function ResponsiveNavBar() {
   const [menuOpen, SetMenuOpen] = useState(false);
+  const clickHandler = () => {
+    window.scrollTo(0, 0);
+  };
   const ChangeMenuState = () => {
     SetMenuOpen(!menuOpen);
     console.log(menuOpen);
@@ -20,16 +23,16 @@ function ResponsiveNavBar() {
 
           <div className="navbarContainer">
             <Link className="navbarButton" to="/home">
-              <li className="navbarButton">Roboty koszące</li>
+              <li onClick={clickHandler} className="navbarButton">Roboty koszące</li>
             </Link>
-          <Link className="navbarButton" to="/sklep">
-              <li className="navbarButton">Sklep</li>
+          <Link  className="navbarButton" to="/sklep">
+              <li onClick={clickHandler} className="navbarButton">Sklep</li>
             </Link>
             <Link className="navbarButton" to="/uslugi">
-              <li className="navbarButton">Usługi</li>
+              <li onClick={clickHandler}  className="navbarButton">Usługi</li>
             </Link>
             <Link className="navbarButton" to="/kontakt">
-              <li className="navbarButton">Kontakt</li>
+              <li onClick={clickHandler}  className="navbarButton">Kontakt</li>
             </Link>
           </div>
         </nav>
