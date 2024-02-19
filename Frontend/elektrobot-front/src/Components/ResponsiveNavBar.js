@@ -19,15 +19,15 @@ function ResponsiveNavBar() {
           </div>
 
           <div className="navbarContainer">
-          <Link className="navbarButton" to="/sklep">
-              <li className="navbarButton">Sklep</li>
-            </Link>
             <Link className="navbarButton" to="/home">
               <li className="navbarButton">Roboty koszące</li>
             </Link>
-
-            <li className="navbarButton">Usługi</li>
-
+          <Link className="navbarButton" to="/sklep">
+              <li className="navbarButton">Sklep</li>
+            </Link>
+            <Link className="navbarButton" to="/uslugi">
+              <li className="navbarButton">Usługi</li>
+            </Link>
             <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
@@ -36,15 +36,17 @@ function ResponsiveNavBar() {
       ) : (
         <nav className="navbar">
           <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
+           
           <div className="navbarContainer">
-            <Link className="navbarButton" to="/sklep">
-              <li className="navbarButton">Sklep</li>
-            </Link>
             <Link className="navbarButton" to="/home">
               <li className="navbarButton">Roboty koszące</li>
             </Link>
-
-            <li className="navbarButton">Usługi</li>
+            <Link className="navbarButton" to="/sklep">
+              <li className="navbarButton">Sklep</li>
+            </Link>
+            <Link className="navbarButton" to="/uslugi">
+              <li className="navbarButton">Usługi</li>
+            </Link>
             <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
