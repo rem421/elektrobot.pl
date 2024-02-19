@@ -13,7 +13,7 @@
 }
 .navbarContainer{
   display: flex;
-  gap: 50px;
+  gap: 90px;
 }
 @media screen and (max-width: 767px) {
   .navbarContainer {
