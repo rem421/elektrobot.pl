@@ -13,7 +13,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/TWENTY_Elite.png"
+      "Img_path": "https://i.ibb.co/gD3cX5h/TWENTY-25-Elite.png"
   },
   {
       "Nazwa": "TWENTY Elite s+",
@@ -29,7 +29,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/TWENTY_Elite_s.png"
+      "Img_path": "https://i.ibb.co/WFfgZVj/TWENTY-Elite-s.png"
   },
   {
       "Nazwa": "TWENTY 25 Elite",
@@ -45,7 +45,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/TWENTY_25_Elite.png"
+      "Img_path": "https://i.ibb.co/gD3cX5h/TWENTY-25-Elite.png"
   },
   {
       "Nazwa": "L250 Elite",
@@ -61,7 +61,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/L250_Elite.png"
+      "Img_path": "https://i.ibb.co/0FvTG6c/L250-ELITE.png"
   },
   {
       "Nazwa": "L250 Elite s+",
@@ -77,7 +77,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/L250_Elite_s.png"
+      "Img_path": "https://i.ibb.co/mBSYVmg/L250-ELITE-s.png"
   },
   {
       "Nazwa": "4.0 Basic premium",
@@ -93,7 +93,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.0_Basic_premium.png"
+      "Img_path": "https://i.ibb.co/7ygckWn/4-0-Basic-Premium.png"
   },
   {
       "Nazwa": "4.0 Elite premium",
@@ -109,7 +109,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.0_Elite_premium.png"
+      "Img_path": "https://i.ibb.co/7ygckWn/4-0-Basic-Premium.png"
   },
   {
       "Nazwa": "4.36 Elite",
@@ -125,7 +125,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM, Powiadomienia SMS",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.36_Elite.png"
+      "Img_path": "https://i.ibb.co/MVTDsyN/4-36-Elite.png"
   },
   {
       "Nazwa": "4.0 4WD Basic premium",
@@ -141,7 +141,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.0_4WD_Basic_premium.png"
+      "Img_path": "https://i.ibb.co/4F49Qsg/4-0-4-WD-Basic-premium.png"
   },
   {
       "Nazwa": "4.0 4WD Elite premium",
@@ -157,7 +157,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.0_4WD_Elite_premium.png"
+      "Img_path": "https://i.ibb.co/0DwXDqg/4-0-4-WD-Elite-premium.png"
   },
   {
       "Nazwa": "4.36 4WD",
@@ -173,7 +173,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM, Powiadomienia SMS",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/4.36_4WD.png"
+      "Img_path": "https://i.ibb.co/cFkyD91/4-36-4WD.png"
   },
   {
       "Nazwa": "Quad Elite",
@@ -189,7 +189,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Quad_Elite.png"
+      "Img_path": "https://i.ibb.co/XYcqB8D/Quad-Elite.png"
   },
   {
       "Nazwa": "L400",
@@ -205,7 +205,7 @@
       "Marka": "Ambrogio",
       "Typ_łączności": "Łączność z aplikacją, Bluetooth i GSM, Powiadomienia SMS",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/L400.png"
+      "Img_path": "https://i.ibb.co/s6kQVt6/L400.png"
   },
   {
       "Nazwa": "LUBA AWD 2 1000",
@@ -221,7 +221,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": " 4G & Wifi & Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_2_AWD.png"
+      "Img_path": "https://i.ibb.co/svZnHkL/LUBA-2-AWD.jpg"
   },
   {
       "Nazwa": "LUBA AWD 2 3000",
@@ -237,7 +237,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": " 4G & Wifi & Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_2_AWD.png"
+      "Img_path": "https://i.ibb.co/svZnHkL/LUBA-2-AWD.jpg"
   },
   {
       "Nazwa": "LUBA AWD 2 5000",
@@ -253,7 +253,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": " 4G & Wifi & Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_2_AWD.png"
+      "Img_path": "https://i.ibb.co/svZnHkL/LUBA-2-AWD.jpg"
   },
   {
       "Nazwa": "LUBA AWD 2 10000",
@@ -269,7 +269,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": " 4G & Wifi & Bluetooth",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_2_AWD.png"
+      "Img_path": "https://i.ibb.co/svZnHkL/LUBA-2-AWD.jpg"
   },
   {
       "Nazwa": "LUBA AWD 1000",
@@ -285,7 +285,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": "Bluetooth,Wi-Fi",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_AWD.png"
+      "Img_path": "https://i.ibb.co/b6Lpcbx/LUBA-AWD.png"
   },
   {
       "Nazwa": "LUBA AWD 3000",
@@ -301,7 +301,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": "Bluetooth,Wi-Fi",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_AWD_3000.png"
+      "Img_path": "https://i.ibb.co/HN4Vkgh/LUBA-AWD-3000.png"
   },
   {
       "Nazwa": "LUBA AWD 5000",
@@ -317,7 +317,7 @@
       "Marka": "Mammotion",
       "Typ_łączności": "Bluetooth,Wi-Fi",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/LUBA_AWD_5000.png"
+      "Img_path": "https://i.ibb.co/5Fw8BrV/LUBA-AWD-5000.png"
   },
   {
       "Nazwa": "Automower 305",
@@ -333,7 +333,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_305.png"
+      "Img_path": "https://i.ibb.co/8PHp646/Screenshot-from-2024-02-19-04-42-46.png"
   },
   {
       "Nazwa": "Automower 405X",
@@ -349,7 +349,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_405X.png"
+      "Img_path": "https://i.ibb.co/w64k7S0/Screenshot-from-2024-02-19-04-39-02.png"
   },
   {
       "Nazwa": "Automower 410XE NERA",
@@ -365,7 +365,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa, Wi-Fi",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_410XE_NERA.png"
+      "Img_path": "https://i.ibb.co/1vZYf1X/Screenshot-from-2024-02-19-04-43-31.png"
   },
   {
       "Nazwa": "Automower 310E NERA",
@@ -381,7 +381,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_310E_NERA.png"
+      "Img_path": "https://i.ibb.co/Qk5PFkV/Screenshot-from-2024-02-19-04-44-01.png"
   },
   {
       "Nazwa": "Automower 415X",
@@ -397,7 +397,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa",
       "Panel_sterowania": "Nie",
-      "Img_path": "./MowerImages/Automower_415X.png"
+      "Img_path": "https://i.ibb.co/Wk7GnZ5/Screenshot-from-2024-02-19-04-44-37.png"
   },
   {
       "Nazwa": "Automower 320 NERA",
@@ -413,7 +413,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Wi-Fi",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_320_NERA.png"
+      "Img_path": "https://i.ibb.co/0FtTCQv/Screenshot-from-2024-02-19-04-45-06.png"
   },
   {
       "Nazwa": "Automower 430X NERA",
@@ -429,7 +429,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa, Wi-Fi",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_430X_NERA.png"
+      "Img_path": "https://i.ibb.co/2jT4GVG/Screenshot-from-2024-02-19-04-45-30.png"
   },
   {
       "Nazwa": "Automower 430X ",
@@ -445,7 +445,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_430X.png"
+      "Img_path": "https://i.ibb.co/GCb35LF/Screenshot-from-2024-02-19-04-46-00.png"
   },
   {
       "Nazwa": "Automower 435X AWD",
@@ -461,7 +461,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_435X_AWD.png"
+      "Img_path": "https://i.ibb.co/5v5FRDV/Screenshot-from-2024-02-19-04-46-40.png"
   },
   {
       "Nazwa": "Automower 450X NERA",
@@ -477,7 +477,7 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa, Wi-Fi",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_450X_NERA.png"
+      "Img_path": "https://i.ibb.co/BByyTr8/Screenshot-from-2024-02-19-04-47-25.png"
   },
   {
       "Nazwa": "Automower 450X ",
@@ -493,6 +493,6 @@
       "Marka": "Husqvarna",
       "Typ_łączności": "Bluetooth, Komórkowa",
       "Panel_sterowania": "Tak",
-      "Img_path": "./MowerImages/Automower_450X.png"
+      "Img_path": "https://i.ibb.co/VDzSW9z/Screenshot-from-2024-02-19-04-47-55.png"
   }
 ]
