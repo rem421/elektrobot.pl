@@ -33,22 +33,22 @@
   .icons {
     margin-right: 3vw;
     display: flex;
-    gap: 5px !important;
+    gap: 15px !important;
     align-items: center;
   }
 }
 .navbarPerson {
-  height: 30px;
-  width: 30px;
+  height: 18px;
+  width: 17px;
 }
 .navbarBasket {
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 17px;
+  width: 18px;
 }
 .navbarLogo {
   object-fit: contain;
-  height: 50%;
+  height: 40%;
 }
 .navbarButton {
   border: 0;
@@ -91,4 +91,8 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
+}
+.navbarButton{
+  font-size: 14px;
+  font-weight: 300;
 }
