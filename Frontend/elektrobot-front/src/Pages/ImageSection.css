@@ -3,10 +3,13 @@
     max-width: 60vw;
 }
 .textContainerLeft{
-    max-width: calc(100%/5);
+    width: 70vw;
+    height: auto;
     font-size: 1.vw;
     text-align: left;
     border-radius: 15px;
+    max-height: 15vw;
+    max-width: 30vw;
     
     font-weight: 300;
     

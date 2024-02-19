@@ -7,6 +7,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import jsonData from "./localization.json";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const MainPage = (props) => {
   const [kosiaraDetails, setKosiaraDetails] = useState([]);
   const [mammotionMowers, setMammotionMowers] = useState([]);
@@ -23,12 +24,13 @@ const MainPage = (props) => {
       setAmbrogioMowers(kosiaraDetails.filter((mower) => mower.Marka === "Ambrogio"));
     }
   }, [kosiaraDetails]);
+  
   return (
     <div className="mainPage">
-      <img className="kosiara" src={require("../Components/Images/Kosiara.jpg")} alt=""></img>
+      <img className="kosiara" src={require("../Components/Images/Kosiara.png")} alt=""></img>
     
 
-      <img className="logoComment" src={require("../Components/Images/AmbrogioComment.png")} alt=""></img>
+      <img className="logoComment top" src={require("../Components/Images/AmbrogioComment.png")} alt=""></img>
       <p className="desc">Cześć, jestem Ambrogio – Innowacyjny, a przy tym łatwy w użyciu robot koszący Made in Italy</p>
       {ambrogioMowers.length > 0 && (
         <Splide
@@ -63,7 +65,9 @@ const MainPage = (props) => {
         </Splide>
       )}
 
+      <Link className="allProducts link-style" to="/sklep">
       <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+      </Link>
       <div className="dash"></div>
 
       <img className="logoComment" src={require("../Components/Images/mammotion.png")} alt=""></img>
@@ -100,7 +104,10 @@ const MainPage = (props) => {
           })}
         </Splide>
       )}
+      <Link to="/sklep" className="allProducts link-style">
       <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+      </Link>
+     
       <div className="dash"></div>
 
       <img className="logoComment" src={require("../Components/Images/husqvarna.png")} alt=""></img>
@@ -137,8 +144,10 @@ const MainPage = (props) => {
           })}
         </Splide>
       )}
+      <Link to="/sklep" className="allProducts link-style">
       
       <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+      </Link>
       <div className="dash"></div>
       <div className="imgSection">
         <div className="sectionLeft">
@@ -165,15 +174,12 @@ const MainPage = (props) => {
             Z ogromnym wyborem modeli automatycznych robotów koszących u nas dostępnych, każdy znajdzie idealny sprzęt dopasowany do potrzeb. Bez względu na rozmiar ogrodu,
             od małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
           </div>
-          <div className="imgContainerLeft">
+          <div className="imgContainerLeft bottom">
             <img className="imgLeft" src={require("../Components/Images/KosiaraZieleniara.png")} alt=""></img>
           </div>
         </div>
       </div>
-      <img className="ofertaButton" src={require("../Components/Images/OfertaNoArrow.png")} alt=""></img>
-      <div className="dash"></div>
     </div>
-    
   );
 };
 export default MainPage;

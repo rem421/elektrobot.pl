@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 const RobotPreview = (props) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+  const clickHandler = () => {
+    window.scrollTo(0, 0);
+  };
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -29,49 +31,40 @@ const RobotPreview = (props) => {
           </div>
 
           <div className="imgContainer">
-            <img className="RobotPreviewImg" src="https://i.ibb.co/nsF9CZh/LUBA-2-AWD.jpg" alt=""></img>
+            <img className="RobotPreviewImg" src={props.clicked.Img_path} alt=""></img>
           </div>
           <img className="mowerInfo" src={require("../Components/Images/tiles.png")} alt=""></img>
-          <p className="sectionTitle"> Co cechuje roboty next line?</p>
+          <p className="sectionTitle"> Co cechuje nasze roboty?</p>
+
           <div className="nextLineInfoContainer">
-            <p className="tileTitle">Baterie</p>
+            <p className="tileTitle">Technologia baterii</p>
             <p className="tileDesc">
-              Roboty ZCS wyposażone są w najnowocześniejsze akumulatory litowo-jonowe. Niezrównana samodzielność i czas pracy na jednym cyklu ładowania naszych robotów pozwala
-              pracować nawet 10 godzin non stop. Stosowanie mocnych, wydajnych ogniw gwarantuje niską liczbę cykli ładowania baterii zatem ich powolne zużycie i długą, stabilną
-              pracę przez kilka lat.
+              Roboty te wykorzystują najnowocześniejsze akumulatory litowo-jonowe, które gwarantują długą niezależność od ładowania oraz stabilność pracy na przestrzeni wielu lat
+              użytkowania. Ich zaletą jest także niska liczba cykli ładowania, co przekłada się na powolne zużycie baterii i długą żywotność. Dzięki tym innowacyjnym bateriom,
+              użytkownicy mogą cieszyć się długotrwałą i niezawodną pracą robotów.
             </p>
           </div>
           <div className="nextLineInfoContainer">
-            <p className="tileTitle">Moc cięcia</p>
+            <p className="tileTitle">Efektywne cięcie</p>
             <p className="tileDesc">
-              Roboty ZCS jako jedyne na świecie posiadają prawdziwe noże, naostrzone dwustronnie wykonane z wysokogatunkowej elastycznej stali. 4 lub 8 ramienne szerokości od 25 do
-              36 cm. Podczas pracy noże osiągają prędkość nawet do 4 tys RPM, zapewniając niezrównaną jakość cięcia każdego trawnika, a przy okazji z powodzeniem radzą sobie z
-              opadającymi szyszkami, owocami czy gałęziami. Nie wymagają regularnej wymiany, jedynie okresowego czyszczenia.
+              Noże robotów wykonane są z wysokiej jakości stali, co gwarantuje niezawodne i skuteczne cięcie trawy. Ich konstrukcja oraz prędkość pracy zapewniają doskonałą jakość
+              koszenia, eliminując opadające szyszki, owoce czy gałęzie. Ponadto, noże wymagają jedynie okresowego czyszczenia, co przyczynia się do utrzymania ich trwałości i
+              wydajności.
             </p>
           </div>
           <div className="nextLineInfoContainer">
-            <p className="tileTitle">Wydajność</p>
+            <p className="tileTitle">Wysoka wydajność</p>
             <p className="tileDesc">
-              Bezkompromisowa moc cięcia w połączeniu z zaawansowanymi algorytmami pracy, potężnymi bateriami oraz doskonałymi właściwościami jezdnymi sprawiają iż roboty ZCS
-              pracują wyjątkowo wydajnie pozostawiając ogród „wolnym od robota” przez większość dnia. Najmniejsze modele potrzebują ok 3 godzin dziennie aby utrzymać 1000 mkw
-              trawnik, większe jednostki osiągają wydajność nawet ponad 1000mkw/h. Wysoka wydajność pozwala robotom przerwać pracę kiedy ich czujniki rozpoznają deszcz (zależne od
-              preferowanych ustawień użytkownika). Trawa tak bardzo nie lubi być koszona w deszczu…
+              Roboty są wyjątkowo efektywne i pozostawiają ogród bez śladów swojej obecności przez większość dnia. Dzięki zaawansowanym algorytmom pracy oraz wydajnym bateriom, są
+              w stanie utrzymać duże powierzchnie trawnika przy minimalnym czasie pracy. Oferują one użytkownikom komfort i oszczędność czasu przy pielęgnacji ogrodu.
             </p>
           </div>
           <div className="nextLineInfoContainer">
-            <p className="tileTitle">Technologia i doświadczenie</p>
+            <p className="tileTitle">Bezpieczeństwo użytkowania</p>
             <p className="tileDesc">
-              ZCS samodzielnie projektuje i produkuje roboty od blisko 20 lat. Posiadamy kompletną ofertę kilkudziesięciu robotów, gotowych skosić każdy trawnik. Lata doświadczeń,
-              liczne patenty i ciągłe innowacje pozwalają pracować w najtrudniejszych ogrodach, spełniając oczekiwania najbardziej wymagających klientów. Polityka stałego wsparcia
-              i aktualizacji sprzedanych urządzeń, sprawia iż technologiczne starzeją się one wyjątkowo wolno i wyjątkowo długo służą naszym klientom.
-            </p>
-          </div>
-          <div className="nextLineInfoContainer">
-            <p className="tileTitle">Bezpieczeństwo</p>
-            <p className="tileDesc">
-              Roboty ZCS spełniają wszystkie, najbardziej restrykcyjne normy bezpieczeństwa. Zabezpieczone kodem PIN, wyposażone w czujniki podniesienia, czujniki przechylenia,
-              czujniki zderzenia, osłony noża, wyłącznik awaryjny STOP minimalizują ryzyko niepożądanych zdarzeń. Nie bez znaczenia jest wysoka moc i wydajność która gwarantuje
-              najkrótszy czas pracy robota i pozostawia ogród do dyspozycji właściciela kiedy tylko jest taka potrzeba.
+              Roboty są wyposażone w liczne zabezpieczenia, takie jak czujniki podniesienia, przechylenia, zderzenia oraz osłony noża. Dzięki temu, użytkownicy mogą być pewni, że
+              urządzenia pracują w sposób bezpieczny dla otoczenia oraz dla samego użytkownika. Te środki bezpieczeństwa minimalizują ryzyko wystąpienia niepożądanych sytuacji
+              podczas pracy robota.
             </p>
           </div>
           <div className="detailsContainer">
@@ -100,10 +93,6 @@ const RobotPreview = (props) => {
                     <td className="secondTable">{props.clicked.Akumulator_litowo_jonowy}</td>
                   </tr>
                   <tr>
-                    <td className="firstTable">Maksymalne nachylenie zboczy (%)</td>
-                    <td className="secondTable">{props.clicked.Maksymalne_nachylenie_zboczy}</td>
-                  </tr>
-                  <tr>
                     <td className="firstTable">Średni czas pracy + -20%</td>
                     <td className="secondTable">{props.clicked.Średni_czas_pracy}</td>
                   </tr>
@@ -124,10 +113,6 @@ const RobotPreview = (props) => {
                     <td className="secondTable">{props.clicked.Typ_łączności}</td>
                   </tr>
                   <tr>
-                    <td className="firstTable">Typ łączności</td>
-                    <td className="secondTable">{props.clicked.Typ_łączności}</td>
-                  </tr>
-                  <tr>
                     <td className="firstTable">Panel sterowania</td>
                     <td className="secondTable">{props.clicked.Panel_sterowania}</td>
                   </tr>
@@ -141,9 +126,10 @@ const RobotPreview = (props) => {
           <div className="summary">
             <p className="summaryText">Podsumowanie</p>
             <img className="summaryImg" src={require("../Components/Images/inProgress.png")} alt=""></img>
-            <Link to="/kontakt">
-            <p className="orderButton">Zapytaj o produkt</p>
-
+            <Link to="/kontakt" className="link-style">
+              <p onClick={clickHandler} className="orderButton">
+                Zapytaj o produkt
+              </p>
             </Link>
           </div>
         )}

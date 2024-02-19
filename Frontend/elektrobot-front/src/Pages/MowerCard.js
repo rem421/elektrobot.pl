@@ -3,6 +3,9 @@ import "./MowerCard.css";
 import { Link } from "react-router-dom";
 
 const MowerCard = (props) => {
+  const clickHandler = () =>{
+    window.scrollTo(0,0)
+  }
   const SetGlobalMower = () => {
     props.setClicked(props.mowerName);
    
@@ -12,10 +15,10 @@ const MowerCard = (props) => {
   };
   return (
     <div className="cardContainer" onClick={SetGlobalMower}>
-      <img onClick={logProps} className="mowerImg" src="https://i.ibb.co/nsF9CZh/LUBA-2-AWD.jpg" alt="Brak obrazka"></img>
+      <img onClick={logProps} className="mowerImg" src={props.imgPath} alt="Brak obrazka"></img>
       <div className="mowerInfoContainer">
-        <Link onClick={SetGlobalMower} to="/podglad">
-          <p className="name">{props.mowerName}</p>
+        <Link onClick={SetGlobalMower} className="link-style" to="/podglad">
+          <p onClick={clickHandler} className="name">{props.mowerName}</p>
         </Link>
 
         <p className="additionalInfo">
