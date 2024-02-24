@@ -1,0 +1,8 @@
+INSTRUKCJA
+
+Przed otworzeniem projektu:
+1. Należy zainstalować Node.js link -----> https://nodejs.org/en/download
+2. (opcjonalne) instalacja chocolatey przy instalacji noda w pewnym momencie wyświetli sie okienko z zapytań o to
+
+Pobieranie projektu:
+Dowolny folder otwieramy w konsoli i klonujemy reposytorium (git clone )
