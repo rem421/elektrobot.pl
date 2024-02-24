@@ -2,8 +2,26 @@ INSTRUKCJA
 
 Przed otworzeniem projektu:
 1. Należy zainstalować Node.js link -----> https://nodejs.org/en/download
-2. (opcjonalne) instalacja chocolatey przy instalacji noda w pewnym momencie wyświetli sie okienko z zapytań o to
+2. (opcjonalne) instalacja chocolatey przy instalacji noda w pewnym momencie wyświetli sie okienko z zapytaniem o to
 
-Pobieranie projektu:
+Pobieranie i otwieranie projektu:
 1. Dowolny folder otwieramy w konsoli i klonujemy repozytorium (git clone https://github.com/rem421/elektrobot.pl.git)
-2. Otwieramy folder w edytorze kodu, na folderze 
+2. Otwieramy folder w edytorze kodu, na folderze elektrobot-front (ważne!)
+3. W konsoli otwieramy ten folder (elektrobot-front) i teraz najlepiej stworzyć osobny branch żeby kod się nie pomieszał (git branch NazwaBrancha)
+4. Wchodzimy do tego Brancha (git checkout NazwaBrancha) uwaga na małe i duże znaki mają znaczenie.
+5. Następnie w konsoli wpisujemy npm install.
+6. Po wykonaniu tej komendy można już edytować projekt.
+7. Aby włączyć widok na strone, wpisujemy w konsoli (npm start)
+8. Zmiany będą wyświetlane na bieżąco dzieki reactowi nie trzeba odświeżać serwera za każdym razem jak coś zmienimy.
+
+Zakończenie Pracy:
+1. żeby zamknąć serwer naciskamy jednocześnie ctrl oraz c
+2. Następnie aby zapisać zmiany w repozytorium gita należy:
+-jeżeli dodaliśmy jakiś nowy plik do projektu najpierw piszemy (git add .)
+-następnie commitujemy zmiany lokalnie (git commit -a -m "tutaj piszemy co zrobiliśmy")
+-na koniec puszujemy zmieny do gita (git push)
+
+Żeby ponownie zacząć pracować nad projektem wystarczy w konsoli napisać (npm start) 
+
+
+
