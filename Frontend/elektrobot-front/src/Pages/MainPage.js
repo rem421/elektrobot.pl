@@ -16,7 +16,7 @@ const MainPage = (props) => {
   const [mammotionMowers, setMammotionMowers] = useState([]);
   const [husqvarnaMowers, setHusqvarnaMowers] = useState([]);
   const [ambrogioMowers, setAmbrogioMowers] = useState([]);
-  const [loadValue, setLoadValue] = useState(0)
+
   useEffect(() => {
     setKosiaraDetails(jsonData);
     console.log(props);
@@ -124,6 +124,9 @@ const MainPage = (props) => {
             perPage: "3",
             wheel: true,
             wheelSleep: "500",
+            autoplay: true,
+            pause: false,
+            type: "loop"
           }}
         >
           {ambrogioMowers.map((mower) => {
@@ -164,6 +167,9 @@ const MainPage = (props) => {
             perPage: "3",
             wheel: true,
             wheelSleep: "500",
+            pause: false,
+            autoplay: true,
+            type: "loop"
           }}
         >
           {mammotionMowers.map((mower) => {
@@ -204,6 +210,9 @@ const MainPage = (props) => {
             perPage: "3",
             wheel: true,
             wheelSleep: "500",
+            autoplay: true,
+            pause: false,
+            type: "loop"
           }}
         >
           {husqvarnaMowers.map((mower) => {
