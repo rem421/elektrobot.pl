@@ -10,6 +10,7 @@ import Shop from "./Pages/Shop.js";
 import Uslugi from "./Pages/Uslugi.js";
 import Kontakt from "./Pages/Kontakt.js";
 import RobotPreview from "./Pages/RobotPreview.js";
+import Regulamin from "./Pages/Regulamin.js";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="podglad" element={<RobotPreview clicked={mowerData} />} />
           <Route path="sklep" element={<Shop setClicked={clickHandler} />} />
           <Route path="uslugi" element={<Uslugi />} />
+          <Route path="regulamin" element={<Regulamin/>}/>
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />

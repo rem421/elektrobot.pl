@@ -9,19 +9,32 @@ const Footer = () => {
     <div className="footerBody">
       <div className="upperSection">
         <img className="logo" src={require("./Images/logo.png")} alt=""></img>
-        
+
         <div className="linkContainer">
           <Link className="link-style" to="/home">
-            <p onClick={clickHandler} className="link">Roboty koszące</p>
+            <p onClick={clickHandler} className="link">
+              Roboty koszące
+            </p>
           </Link>
           <Link className="link-style" to="/uslugi">
-            <p onClick={clickHandler} className="link">Usługi</p>
+            <p onClick={clickHandler} className="link">
+              Usługi
+            </p>
           </Link>
           <Link className="link-style" to="/sklep">
-            <p onClick={clickHandler} className="link">Sklep</p>
+            <p onClick={clickHandler} className="link">
+              Sklep
+            </p>
           </Link>
           <Link className="link-style" to="/kontakt">
-            <p onClick={clickHandler} className="link">Kontakt</p>
+            <p onClick={clickHandler} className="link">
+              Kontakt
+            </p>
+          </Link>
+          <Link className="link-style" to="/regulamin">
+            <p onClick={clickHandler} className="link">
+              Regulamin
+            </p>
           </Link>
         </div>
       </div>

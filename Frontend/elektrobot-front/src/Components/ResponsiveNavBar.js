@@ -23,23 +23,32 @@ function ResponsiveNavBar() {
 
           <div className="navbarContainer">
             <Link className="navbarButton" to="/home">
-              <li onClick={clickHandler} className="navbarButton">Roboty koszące</li>
+              <li onClick={clickHandler} className="navbarButton">
+                Roboty koszące
+              </li>
             </Link>
-          <Link  className="navbarButton" to="/sklep">
-              <li onClick={clickHandler} className="navbarButton">Sklep</li>
+            <Link className="navbarButton" to="/sklep">
+              <li onClick={clickHandler} className="navbarButton">
+                Sklep
+              </li>
             </Link>
             <Link className="navbarButton" to="/uslugi">
-              <li onClick={clickHandler}  className="navbarButton">Usługi</li>
+              <li onClick={clickHandler} className="navbarButton">
+                Usługi
+              </li>
             </Link>
             <Link className="navbarButton" to="/kontakt">
-              <li onClick={clickHandler}  className="navbarButton">Kontakt</li>
+              <li onClick={clickHandler} className="navbarButton">
+                Kontakt
+              </li>
             </Link>
+            
           </div>
         </nav>
       ) : (
         <nav className="navbar">
           <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
-           
+
           <div className="navbarContainer">
             <Link className="navbarButton" to="/sklep">
               <li className="navbarButton">Roboty koszące</li>
@@ -53,6 +62,7 @@ function ResponsiveNavBar() {
             <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
+           
           </div>
           <div className="icons">
             {/* <img className="navbarBasket" src={require("./Images/basket.png")} alt="" /> */}
