@@ -16,9 +16,10 @@ const MainPage = (props) => {
   const [mammotionMowers, setMammotionMowers] = useState([]);
   const [husqvarnaMowers, setHusqvarnaMowers] = useState([]);
   const [ambrogioMowers, setAmbrogioMowers] = useState([]);
+  const [loadValue, setLoadValue] = useState(0)
   useEffect(() => {
     setKosiaraDetails(jsonData);
-    console.log(props)
+    console.log(props);
   }, []);
   useEffect(() => {
     if (kosiaraDetails.length > 0) {
@@ -27,33 +28,32 @@ const MainPage = (props) => {
       setAmbrogioMowers(kosiaraDetails.filter((mower) => mower.Marka === "Ambrogio"));
     }
   }, [kosiaraDetails]);
-  
+
   function startLoader() {
-      let counterElement = document.querySelector(".counter");
-      let currentValue = 0;
-    
+    let counterElement = document.querySelector(".counter");
+    let currentValue = 0;
+
     function updateCounter() {
-      if(currentValue === 100) {
+      if (currentValue === 100) {
         return;
       }
 
       currentValue += Math.floor(Math.random() * 2) + 1;
 
-      if(currentValue > 100) {
+      if (currentValue > 100) {
         currentValue = 100;
       }
 
-      counterElement.textConent = currentValue;
+      counterElement.textContent = currentValue;
 
       let delay = Math.floor(Math.random() * 50) + 50;
       setTimeout(updateCounter, delay);
     }
-    updateCounter();  
+    updateCounter();
   }
   useGSAP(() => {
-
     startLoader();
-    
+
     gsap.to(".counter", 0.25, {
       delay: 3.5,
       opacity: 0,
@@ -63,33 +63,32 @@ const MainPage = (props) => {
       delay: 3.5,
       height: 0,
       stagger: {
-        amount: 0.5
+        amount: 0.5,
       },
       ease: "power3.out",
     });
-    
+
     gsap.from(".h1", 1.5, {
       delay: 4,
       y: 700,
       stagger: {
         amount: 0.5,
       },
-      ease: "power4.inOut"
+      ease: "power4.inOut",
     });
     gsap.from(".hero", 2, {
       delay: 4.5,
-      y:400,
+      y: 400,
       ease: "power4.inOut",
     });
-  
   }, []);
   return (
     <div className="mainPage">
       <h1 class="counter">0</h1>
       <div class="overlay">
         <div class="bar"></div>
-        <div class="bar"></div>  
-        <div class="bar"></div>  
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
 
       <div class="container">
@@ -109,7 +108,7 @@ const MainPage = (props) => {
       <div class="hero">
         <img className="kosiara" src={require("../Components/Images/Kosiara.png")} alt=""></img>
       </div>
-      
+
       <img className="logoComment top" src={require("../Components/Images/AmbrogioComment.png")} alt=""></img>
       <p className="desc">Cześć, jestem Ambrogio – Innowacyjny, a przy tym łatwy w użyciu robot koszący Made in Italy</p>
       {ambrogioMowers.length > 0 && (
@@ -146,7 +145,7 @@ const MainPage = (props) => {
       )}
 
       <Link className="allProducts link-style" to="/sklep">
-      <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+        <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
       </Link>
       <div className="dash"></div>
 
@@ -185,9 +184,9 @@ const MainPage = (props) => {
         </Splide>
       )}
       <Link to="/sklep" className="allProducts link-style">
-      <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+        <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
       </Link>
-     
+
       <div className="dash"></div>
 
       <img className="logoComment" src={require("../Components/Images/husqvarna.png")} alt=""></img>
@@ -225,8 +224,7 @@ const MainPage = (props) => {
         </Splide>
       )}
       <Link to="/sklep" className="allProducts link-style">
-      
-      <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
+        <p className="allProducts">Zobacz wszystkie produkty &#10095;</p>
       </Link>
       <div className="dash"></div>
       <div className="imgSection">
@@ -251,8 +249,8 @@ const MainPage = (props) => {
         </div>
         <div className="sectionLeft">
           <div className="textContainerLeft">
-            Z ogromnym wyborem modeli automatycznych robotów koszących u nas dostępnych, każdy znajdzie idealny sprzęt dopasowany do potrzeb. Bez względu na rozmiar ogrodu,
-            od małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
+            Z ogromnym wyborem modeli automatycznych robotów koszących u nas dostępnych, każdy znajdzie idealny sprzęt dopasowany do potrzeb. Bez względu na rozmiar ogrodu, od
+            małych przestrzeni po rozległe tereny, istnieje model dedykowany do efektywnego koszenia praktycznie każdej wielkości obszaru.
           </div>
           <div className="imgContainerLeft bottom">
             <img className="imgLeft" src={require("../Components/Images/KosiaraZieleniara.png")} alt=""></img>
