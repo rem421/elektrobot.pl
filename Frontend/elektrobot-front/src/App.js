@@ -12,6 +12,7 @@ import Kontakt from "./Pages/Kontakt.js";
 import RobotPreview from "./Pages/RobotPreview.js";
 import Regulamin from "./Pages/Regulamin.js";
 import { useEffect, useState } from "react";
+import AboutUs from "./Pages/AboutUs.js";
 
 function App() {
   const [mowerList, setMowerList] = useState([]);
@@ -25,12 +26,11 @@ function App() {
     console.log(clickedMower);
     if (clickedMower !== "" && mowerList.length > 0) {
       setMowerData(mowerList.find((mower) => mower.Nazwa === clickedMower));
-      
     }
   }, [clickedMower]);
-  useEffect((()=> {
+  useEffect(() => {
     console.log(mowerData);
-  }),[mowerData])
+  }, [mowerData]);
   const clickHandler = (mowerName) => {
     setClickedMower(mowerName);
   };
@@ -45,7 +45,8 @@ function App() {
           <Route path="podglad" element={<RobotPreview clicked={mowerData} />} />
           <Route path="sklep" element={<Shop setClicked={clickHandler} />} />
           <Route path="uslugi" element={<Uslugi />} />
-          <Route path="regulamin" element={<Regulamin/>}/>
+          <Route path="regulamin" element={<Regulamin />} />
+          <Route path="aboutUs" element={<AboutUs />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />

@@ -27,6 +27,11 @@ function ResponsiveNavBar() {
                 Roboty koszące
               </li>
             </Link>
+            <Link className="navbarButton" to="/aboutUs">
+              <li onClick={clickHandler} className="navbarButton">
+                O nas
+              </li>
+            </Link>
             <Link className="navbarButton" to="/sklep">
               <li onClick={clickHandler} className="navbarButton">
                 Sklep
@@ -42,7 +47,6 @@ function ResponsiveNavBar() {
                 Kontakt
               </li>
             </Link>
-            
           </div>
         </nav>
       ) : (
@@ -53,6 +57,9 @@ function ResponsiveNavBar() {
             <Link className="navbarButton" to="/sklep">
               <li className="navbarButton">Roboty koszące</li>
             </Link>
+            <Link className="navbarButton" to="/aboutUs">
+              <li className="navbarButton">O nas</li>
+            </Link>
             <Link className="navbarButton" to="/sklep">
               <li className="navbarButton">Akcesoria</li>
             </Link>
@@ -62,7 +69,6 @@ function ResponsiveNavBar() {
             <Link className="navbarButton" to="/kontakt">
               <li className="navbarButton">Kontakt</li>
             </Link>
-           
           </div>
           <div className="icons">
             {/* <img className="navbarBasket" src={require("./Images/basket.png")} alt="" /> */}
