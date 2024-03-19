@@ -41,11 +41,11 @@ function ResponsiveNavBar() {
           <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
            
           <div className="navbarContainer">
-            <Link className="navbarButton" to="/home">
+            <Link className="navbarButton" to="/sklep">
               <li className="navbarButton">Roboty koszące</li>
             </Link>
             <Link className="navbarButton" to="/sklep">
-              <li className="navbarButton">Sklep</li>
+              <li className="navbarButton">Akcesoria</li>
             </Link>
             <Link className="navbarButton" to="/uslugi">
               <li className="navbarButton">Usługi</li>
@@ -55,8 +55,8 @@ function ResponsiveNavBar() {
             </Link>
           </div>
           <div className="icons">
-            <img className="navbarBasket" src={require("./Images/basket.png")} alt="" />
-            <img className="navbarPerson" src={require("./Images/person.png")} alt="" />
+            {/* <img className="navbarBasket" src={require("./Images/basket.png")} alt="" /> */}
+            {/* <img className="navbarPerson" src={require("./Images/person.png")} alt="" /> */}
             <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
           </div>
         </nav>

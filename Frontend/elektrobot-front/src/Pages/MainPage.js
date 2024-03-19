@@ -8,6 +8,9 @@ import "@splidejs/react-splide/css";
 import jsonData from "./localization.json";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
 const MainPage = (props) => {
   const [kosiaraDetails, setKosiaraDetails] = useState([]);
   const [mammotionMowers, setMammotionMowers] = useState([]);
@@ -25,11 +28,88 @@ const MainPage = (props) => {
     }
   }, [kosiaraDetails]);
   
+  function startLoader() {
+      let counterElement = document.querySelector(".counter");
+      let currentValue = 0;
+    
+    function updateCounter() {
+      if(currentValue === 100) {
+        return;
+      }
+
+      currentValue += Math.floor(Math.random() * 2) + 1;
+
+      if(currentValue > 100) {
+        currentValue = 100;
+      }
+
+      counterElement.textConent = currentValue;
+
+      let delay = Math.floor(Math.random() * 50) + 50;
+      setTimeout(updateCounter, delay);
+    }
+    updateCounter();  
+  }
+  useGSAP(() => {
+
+    startLoader();
+    
+    gsap.to(".counter", 0.25, {
+      delay: 3.5,
+      opacity: 0,
+    });
+
+    gsap.to(".bar", 1.5, {
+      delay: 3.5,
+      height: 0,
+      stagger: {
+        amount: 0.5
+      },
+      ease: "power3.out",
+    });
+    
+    gsap.from(".h1", 1.5, {
+      delay: 4,
+      y: 700,
+      stagger: {
+        amount: 0.5,
+      },
+      ease: "power4.inOut"
+    });
+    gsap.from(".hero", 2, {
+      delay: 4.5,
+      y:400,
+      ease: "power4.inOut",
+    });
+  
+  }, []);
   return (
     <div className="mainPage">
-      <img className="kosiara" src={require("../Components/Images/Kosiara.png")} alt=""></img>
-    
+      <h1 class="counter">0</h1>
+      <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>  
+        <div class="bar"></div>  
+      </div>
 
+      <div class="container">
+        <div class="header">
+          <div class="h1">E</div>
+          <div class="h1">L</div>
+          <div class="h1">E</div>
+          <div class="h1">K</div>
+          <div class="h1">T</div>
+          <div class="h1">R</div>
+          <div class="h1">O</div>
+          <div class="h1">B</div>
+          <div class="h1">O</div>
+          <div class="h1">T</div>
+        </div>
+      </div>
+      <div class="hero">
+        <img className="kosiara" src={require("../Components/Images/Kosiara.png")} alt=""></img>
+      </div>
+      
       <img className="logoComment top" src={require("../Components/Images/AmbrogioComment.png")} alt=""></img>
       <p className="desc">Cześć, jestem Ambrogio – Innowacyjny, a przy tym łatwy w użyciu robot koszący Made in Italy</p>
       {ambrogioMowers.length > 0 && (

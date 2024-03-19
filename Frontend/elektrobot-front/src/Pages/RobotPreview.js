@@ -28,6 +28,7 @@ const RobotPreview = (props) => {
           <div className="title-buy">
             <p className="robotTitle">Kup {props.clicked.Nazwa}</p>
             <p className="suggestedPrice">Cena już od {props.clicked.Cena} zł</p>
+          
           </div>
 
           <div className="imgContainer">
@@ -126,7 +127,7 @@ const RobotPreview = (props) => {
           <div className="summary">
             <p className="summaryText">Podsumowanie</p>
             <img className="summaryImg" src={require("../Components/Images/inProgress.png")} alt=""></img>
-            <Link to="/kontakt" className="link-style">
+            <Link to="/kontakt" className="link-style"> 
               <p onClick={clickHandler} className="orderButton">
                 Zapytaj o produkt
               </p>
