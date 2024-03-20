@@ -12,13 +12,20 @@ function ResponsiveNavBar() {
     SetMenuOpen(!menuOpen);
     console.log(menuOpen);
   };
-
+  function logoClickRedirection() {
+    window.location.href = "/home"
+  };
   return (
     <>
       {menuOpen ? (
         <nav className="menuOpen">
           <div className="navbarBarsContainer">
-            <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
+            <img
+              onClick={ChangeMenuState}
+              className="navbarBars"
+              src={require("./Images/bars.png")}
+              alt=""
+            />
           </div>
 
           <div className="navbarContainer">
@@ -51,7 +58,12 @@ function ResponsiveNavBar() {
         </nav>
       ) : (
         <nav className="navbar">
-          <img className="navbarLogo" src={require("./Images/logo.png")} alt="" />
+          <img
+            onClick={logoClickRedirection}
+            className="navbarLogo"
+            src={require("./Images/logo.png")}
+            alt=""
+          />
 
           <div className="navbarContainer">
             <Link className="navbarButton" to="/sklep">
@@ -73,7 +85,12 @@ function ResponsiveNavBar() {
           <div className="icons">
             {/* <img className="navbarBasket" src={require("./Images/basket.png")} alt="" /> */}
             {/* <img className="navbarPerson" src={require("./Images/person.png")} alt="" /> */}
-            <img onClick={ChangeMenuState} className="navbarBars" src={require("./Images/bars.png")} alt="" />
+            <img
+              onClick={ChangeMenuState}
+              className="navbarBars"
+              src={require("./Images/bars.png")}
+              alt=""
+            />
           </div>
         </nav>
       )}

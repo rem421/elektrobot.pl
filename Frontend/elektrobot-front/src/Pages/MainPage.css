@@ -58,9 +58,13 @@
   align-items: flex-end;
   z-index: 100;
   color: #aaa;
-  padding: 0.2em 0.4em;
-  font-size: 20vw;
+  padding: 0.7em 0.7em;
+  font-size: 10vw;
   font-family: "Poppins";
+  font-weight: 200;
+}
+.counterMaxed {
+  display: none;
 }
 .ofertaButton{
   
