@@ -13,8 +13,8 @@ function ResponsiveNavBar() {
     console.log(menuOpen);
   };
   function logoClickRedirection() {
-    window.location.href = "/home"
-  };
+    window.location.href = "/home";
+  }
   return (
     <>
       {menuOpen ? (
@@ -66,9 +66,21 @@ function ResponsiveNavBar() {
           />
 
           <div className="navbarContainer">
-            <Link className="navbarButton" to="/sklep">
-              <li className="navbarButton">Roboty koszące</li>
-            </Link>
+            <div className="dropdown">
+              <span>Roboty koszące</span>
+              <div className="dropdown-content">
+                <Link className="navbarButton" to="/sklep">
+                  <li className="navbarButton dropdown-item">Husqvarna</li>
+                </Link>
+                <Link className="navbarButton" to="/sklep">
+                  <li className="navbarButton dropdown-item">Mammotion</li>
+                </Link>
+                <Link className="navbarButton" to="/sklep">
+                  <li className="navbarButton dropdown-item">Ambrogio</li>
+                </Link>
+              </div>
+            </div>
+
             <Link className="navbarButton" to="/aboutUs">
               <li className="navbarButton">O nas</li>
             </Link>
